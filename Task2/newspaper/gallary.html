@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Image Gallary</title>
+        <link rel="stylesheet" href="gallary.css">
+    </head>
+    <body>
+        <div class="full-img">
+            <img src="vinesh.jpg" id="maxi">
+            <span onclick="closee()">X</span>
+        </div>
+        <div class="images">
+            <img src="vinesh.jpg" onclick="show(this.src)" >
+            <img src="vinesh1.jpeg" onclick="show(this.src)">
+            <img src="vinesh2.jpeg" onclick="show(this.src)">
+            <img src="neeraj.jpg" onclick="show(this.src)">
+            <img src="neeraj1.jpeg" onclick="show(this.src)">
+            <img src="neeraj2.jpeg" onclick="show(this.src)">
+            <img src="manu.jpeg" onclick="show(this.src)">
+            <img src="manu1.jpeg" onclick="show(this.src)">
+            <img src="manu2.jpeg" onclick="show(this.src)">
+        </div>
+        <script>
+            function show(pic){
+                document.getElementsByClassName('full-img')[0].style.display="flex";
+                document.getElementById('maxi').src=pic;
+            }
+            
+            function closee(){
+                document.getElementsByClassName('full-img')[0].style.display = "none";
+            }
+        </script>
+    </body>
+</html>
