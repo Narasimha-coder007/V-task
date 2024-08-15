@@ -1,0 +1,103 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #7415e0, #db0dc0);
+}
+#container{
+    height:350px;
+    width:380px;
+    background-color: rgb(226, 208, 211);
+    display: flex;
+    /*text-align: center;*/
+    align-items: center;
+    flex-direction: column; 
+    background-color: white;
+    border-radius: 10px;
+    overflow: scroll;
+}
+#heading h3{
+    display:inline;
+    font-size: 20px;
+}
+#heading img{
+    width:25px;
+    height:25px;
+    margin-left: 8px;
+    margin-top: 10px;
+    border-radius: 5px;
+    
+}
+#tb{
+    margin-top: 8px;
+    width:350px;
+    height:50px;
+    /*background-color: rgb(158, 155, 155);*/
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 35px;
+    
+}
+#tb input{
+    width:100%;
+    border-radius: 35px;
+    padding:5px;
+}
+#tb button{
+    border-radius: 35px;
+    background-color: rgb(36, 158, 36);
+    color:black;
+    border-color: black;
+    width:60px;
+    padding:5px;
+    outline: none;
+    cursor: pointer;
+}
+ul li {
+    position: relative;
+    padding-left:12px 8px 12px 50px;
+    list-style: none;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+ul li::before {
+    content: '';
+    position: absolute; 
+    height: 20px;
+    width: 20px; 
+    border-radius: 10px;
+    background-image: url('images/radio_unselected.png'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    left:-25px;
+}
+ul li span{
+    position: absolute;
+    right:0;
+    top:5px;
+    font-size: 16px;
+    width:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+ul li span:hover{
+    background-color: rgb(167, 163, 163);
+    border-radius: 10px;
+    cursor: pointer;
+}
+ul li.checked{
+    text-decoration: line-through;
+    
+}
+ul li.checked::before{
+    background-image: url('images/radio_selected.png'); 
+
+}

@@ -1,0 +1,75 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: center;
+    height: 100vh;
+    margin:0;
+    font-family: Arial, sans-serif; 
+    background: linear-gradient(135deg, #224894, #701786);;
+    
+    }
+#displayText{
+    width: 80%;
+    height:250px;
+    display:block;
+    background: linear-gradient(135deg, #224894, #701786);;
+    font-size: 20px;
+    padding:4px;
+    overflow: auto;
+    line-height: 1.5;
+    letter-spacing: 1.4px;
+    border-color:10px solid rgb(20, 17, 17);
+}
+#heading {
+    padding-top: 0;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    background: linear-gradient(to right, #69395d, #E6E6FA);;
+    margin-bottom: 8px;
+    margin-top: 20px;
+    padding:10px;
+}
+
+#heading h2 {
+    margin: 0;
+    display: inline;
+}
+button{
+    padding:5px;
+    margin-top: 10px;
+    width:100px;
+    cursor: pointer;
+}
+button:hover{
+    background-color:rgb(223, 78, 11);
+}
+.underline {
+    background-color: yellow;
+    color: black;
+  }
+
+  #timer {
+    font-size: 1.5em;
+    position: absolute;
+    right: 40px;
+}
+p{
+    display: block;
+    background-color: rgb(206, 225, 241) ;
+    padding: 2px;
+}
+#timings{
+    margin-top:10px;
+    background-color: aliceblue;
+    padding:4px;
+}
+#timedisplay{
+    margin-top:10px;
+}
+#result{
+    margin-top:10px;
+}
